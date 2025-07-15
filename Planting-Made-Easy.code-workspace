@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "JavaPractice",
+			"path": "../JavaPractice"
+		},
+		{
+			"name": "first-contributions",
+			"path": "../first-contributions"
+		}
+	],
+	"settings": {}
+}
