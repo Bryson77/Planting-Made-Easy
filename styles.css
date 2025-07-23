@@ -1,0 +1,39 @@
+nav {
+    background-color: #4CAF50;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2b5a2e;
+    border-radius: 6px;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+    line-height: 1.6;
+
+}

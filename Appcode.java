@@ -16,12 +16,12 @@ public class Appcode {
         scanner.close();
     }
     static void infoOntomatoes(String plantType) {
-        if (plantType.equalsIgnoreCase(String plantType) = "tomatoes"){
+        if (plantType.equalsIgnoreCase("tomatoes")){
             System.out.println("Tomatoes are a warm-season crop that thrive in full sun. They require well-drained soil and regular watering.");
             System.out.println("Plant them after the last frost, spacing them about 18-24 inches apart.");
             System.out.println("Fertilize with a balanced fertilizer every 4-6 weeks during the growing season.");
         }
-        else if(plantType.equalsIgnoreCase(plantType) = Potatoes) {
+        else if(plantType.equalsIgnoreCase("potatoes")) {
 
 
         }
