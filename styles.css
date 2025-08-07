@@ -1,7 +1,8 @@
 nav {
-    background-color: #4CAF50;
+    background-color: #4CAF50;  /* Keep existing green */
     padding: 2rem;
     margin-bottom: 4rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -12,7 +13,12 @@ nav ul {
     justify-content: right;
     gap: 1rem;
 }
-
+.name{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    margin-right: auto;  /* Pushes the name to the left */
+}
 nav li {
     display: inline-block;
 }
@@ -25,15 +31,76 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #2b5a2e;
+    background-color: #45a049;  /* Slightly lighter green */
     border-radius: 6px;
 }
-body{
-    background-color: black;
-    color: white;
+
+body {
+    color: #333333;  /* Soft black for better readability */
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     line-height: 1.6;
+    background-color: #f8fff8;  /* Very light green tint */
+}
 
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+
+.content-box {
+    max-width: 700px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.1);  /* Green tinted shadow */
+    border: 1px solid #e8f5e9;  /* Very light green border */
+}
+
+p {
+    line-height: 1.6;
+    color: #333333;  /* Soft black */
+}
+
+strong {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 20px;
+    color: #2e7d32;  /* Darker green for emphasis */
+}
+
+/* Add styles for buttons */
+button, .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+    background-color: #45a049;
+}
+
+/* Add styles for headings */
+h1, h2, h3 {
+    color: #2e7d32;  /* Darker green */
+}
+
+/* Add styles for links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2e7d32;
 }
