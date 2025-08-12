@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Parent: This will automatically manage dependency versions -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.4</version>  <!-- Use the latest stable version -->
+        <relativePath/> <!-- Allows Maven to fetch from the repository -->
+    </parent>
+
+    <groupId>com.assignment</groupId>
+    <artifactId>foodGarden</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>FoodGarden</name>
+    <description>Simple Spring Boot Web App for Food Garden</description>
+
+    <dependencies>
+        <!-- Spring Boot Starter Web (for REST and MVC) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring Boot Starter Thymeleaf (for HTML templates) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.2.4</version>  <!-- Specify the version -->
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

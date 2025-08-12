@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Recommendation</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About Us</a> |
+        <a href="/garden">Garden Recommendation</a>
+    </nav>
+
+    <h1>Plant Recommendation</h1>
+    <p>Based on your garden area of <strong th:text="${area}"></strong> square meters, we recommend:</p>
+    <p th:text="${plant}"></p>
+    <img th:src="@{/images/{image}(image=${image})}" alt="Plant Image" width="600">
+
+    <p><a href="/garden">Go back</a></p>
+</body>
+</html>
