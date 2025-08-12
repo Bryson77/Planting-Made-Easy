@@ -12,5 +12,7 @@
 			"path": "../first-contributions"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"editor.inlineSuggest.enabled": false
+	}
 }
