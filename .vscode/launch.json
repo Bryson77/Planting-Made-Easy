@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Spring Boot-FoodGardenApplication<foodGarden>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.assignment.foodGarden.FoodGardenApplication",
+            "projectName": "foodGarden",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
