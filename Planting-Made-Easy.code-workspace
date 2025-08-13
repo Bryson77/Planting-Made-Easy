@@ -13,6 +13,7 @@
 		}
 	],
 	"settings": {
-		"editor.inlineSuggest.enabled": false
+		"editor.inlineSuggest.enabled": false,
+		"java.compile.nullAnalysis.mode": "automatic"
 	}
 }
