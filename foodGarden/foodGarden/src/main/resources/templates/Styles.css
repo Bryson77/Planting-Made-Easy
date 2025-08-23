@@ -1,7 +1,7 @@
 nav {
     background-color: #4CAF50;  /* Keep existing green */
-    padding: 2rem;
-    margin-bottom: 4rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -13,11 +13,19 @@ nav ul {
     justify-content: right;
     gap: 1rem;
 }
+.brand{
+    display: flex;
+    text-align: left;
+}
 .name{
     font-size: 1.3rem;
     color: white;
     font-weight: bold;
-    margin-right: auto;  /* Pushes the name to the left */
+    margin-right: 650px;  /* Pushes the name to the left */
+}
+.nav-logo{
+    height: 30px;
+    width: 40px;
 }
 nav li {
     display: inline-block;
@@ -48,7 +56,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
     text-align: center;
     padding: 10px;
     background-color: white;
