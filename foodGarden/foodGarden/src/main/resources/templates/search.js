@@ -1,5 +1,5 @@
 const pages = [
-  { title: "Home", url: "index.html", description: "Welcome to our homepage." },
+  { title: "Apples", url: "/templates/FruitVegPages/APPLES.html", description: "Learn more about apples here" },
   { title: "About Us", url: "about.html", description: "Learn more about our company and team." },
   { title: "Services", url: "services.html", description: "Explore the services we offer." },
   { title: "Contact", url: "contact.html", description: "Get in touch with us." },
