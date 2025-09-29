@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onions</title>
     <link rel="stylesheet" href="css/onions.css">
+    <script src="javascript files/onions.js" defer></script>
     <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
 <body>
@@ -49,6 +50,27 @@
                 <p>Drip irrigation improves water efficiency and reduces disease risk. In South Africa, drip systems are increasingly popular for conserving water and delivering moisture directly to the roots. Irrigation should be adjusted based on soil type and weather, with more frequent watering during hot, dry spells. Monitoring soil moisture helps prevent stress and supports steady growth throughout the season.</p>
                 <h2>Seed Spacing & Density:</h2>
                 <p>Rows spaced 20–30 cm apart; plants 8–10 cm apart. Sowing density ranges from 1500 to 2500 seeds per m². Proper spacing helps prevent disease and ensures each plant has enough room to develop strong roots and bulbs. In South Africa, farmers often use mechanical planters for large fields, while home gardeners can sow seeds by hand, making sure to keep rows straight and evenly spaced. Good spacing also makes it easier to weed, fertilise, and harvest the crop.</p>
+                <div class="garden-planner">
+                    <h2>Onion Garden Planner</h2>
+                    <div class="input-group">
+                        <label for="gardenWidth">Garden Width (meters):</label>
+                        <input type="number" id="gardenWidth" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="gardenLength">Garden Length (meters):</label>
+                        <input type="number" id="gardenLength" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="growingMethod">Growing Method:</label>
+                        <select id="growingMethod">
+                            <option value="standard">Standard Row (30cm spacing)</option>
+                            <option value="intensive">Intensive Bed (20cm spacing)</option>
+                            <option value="container">Container Growing (15cm spacing)</option>
+                        </select>
+                    </div>
+                    <button id="planGarden">Plan My Onion Garden</button>
+                    <div id="gardenResults"></div>
+                </div>
             </div>
         </div>
     </main>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oranges</title>
     <link rel="stylesheet" href="css/orange.css">
+    <script src="javascript files/oranges.js" defer></script>
      <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
 <body>
@@ -47,6 +48,26 @@
                 <p>Apply balanced NPK fertilizers with micronutrients based on soil analysis. Fertilize three times a year—typically in July, December, and March. In South Africa, many growers use organic fertilisers such as chicken manure or commercial blends tailored for citrus. Regular feeding and consistent watering will help your orange trees grow strong and produce abundant, tasty fruit. Good nutrition also helps the plants resist pests and diseases, ensuring a healthy crop throughout the season.</p>
                 <h2>Spacing & Orchard Design:</h2>
                 <p>Trees are spaced 3 to 5 meters apart, with rows 4 to 8 meters apart depending on rootstock and variety. Proper spacing helps prevent disease and ensures each tree has enough room to develop strong roots and branches. In South Africa, commercial orchards are often laid out to maximise airflow and sunlight, which helps produce high-quality fruit. Good spacing also makes it easier to prune, fertilise, and harvest the crop.</p>
+                    <div class="garden-planner">
+                        <h2>Orange Tree Garden Planner</h2>
+                        <div class="input-group">
+                            <label for="gardenWidth">Garden Width (meters):</label>
+                            <input type="number" id="gardenWidth" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="gardenLength">Garden Length (meters):</label>
+                            <input type="number" id="gardenLength" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="growingMethod">Growing Method:</label>
+                            <select id="growingMethod">
+                                <option value="standard">Standard Orchard (4m initial spacing)</option>
+                                <option value="intensive">Intensive Growing (3m initial spacing)</option>
+                                <option value="container">Container Growing (2m spacing)</option>
+                            </select>
+                        </div>
+                        <button id="planGarden">Plan My Orange Garden</button>
+                        <div id="gardenResults"></div>
             </div>
         </div>
     </main>

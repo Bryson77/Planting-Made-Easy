@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cucumber</title>
     <link rel="stylesheet" href="css/cucumber.css">
+    <script src="javascript files/cucumber.js" defer></script>
     <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
 <body>
@@ -41,6 +42,27 @@
                 <p>Full sun exposure is essential for healthy growth and fruit development. Cucumbers require at least 6 to 8 hours of direct sunlight daily. In hot climates, partial shade during the afternoon can help prevent the soil from overheating and keep fruit sweet and crisp. South African gardeners often plant cucumbers in spots that get morning sun and afternoon shade, especially in regions with intense summer heat. Too much shade can result in leggy plants and small fruit, while too much sun in hot weather can cause stress and early bolting. If growing in containers, move them to follow the sun or use shade cloth during heatwaves to protect the crop and extend the harvest window.</p>
                 <h2>Temperature Tolerance:</h2>
                 <p>Optimal growth occurs at 30°C during the day and 18°C to 20°C at night. Extreme heat may cause fruit deformities or bitter flavour. In South Africa, cucumbers thrive in warm, humid conditions but can struggle during heatwaves or cold snaps. Protecting young plants from sudden temperature changes with mulch or row covers can help maintain steady growth. With the right care, cucumbers can be grown successfully in many parts of the country, providing a refreshing addition to salads and meals throughout the season.</p>
+                <div class="garden-planner">
+                        <h2>Cucumber Garden Planner</h2>
+                        <div class="input-group">
+                            <label for="gardenWidth">Garden Width (meters):</label>
+                            <input type="number" id="gardenWidth" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="gardenLength">Garden Length (meters):</label>
+                            <input type="number" id="gardenLength" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="growingMethod">Growing Method:</label>
+                            <select id="growingMethod">
+                                <option value="standard">Standard Trellis (50cm spacing)</option>
+                                <option value="intensive">Intensive Growing (30cm spacing)</option>
+                                <option value="container">Container Growing (20cm spacing)</option>
+                            </select>
+                        </div>
+                        <button id="planGarden">Plan My Cucumber Garden</button>
+                        <div id="gardenResults"></div>
+                    </div>
             </div>
         </div>
     </main>

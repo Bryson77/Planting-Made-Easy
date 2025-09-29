@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spinach</title>
     <link rel="stylesheet" href="css/spinach.css">
+    <script src="javascript files/spinach.js" defer></script>
     <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
 <body>
@@ -45,6 +46,27 @@
                 <p>Sprinkler irrigation ensures uniform moisture distribution and supports successful seed germination. In South African conditions, drip systems may also be used, particularly in areas where water conservation is important. Irrigation frequency depends on soil type, weather conditions, and plant growth stage. Most growers monitor soil moisture regularly and adjust watering schedules accordingly to maintain optimal growing conditions.</p>
                 <h2>Seed Spacing & Density:</h2>
                 <p>Plant rows 50–60 cm apart with plants spaced 15–20 cm within rows. Direct seeding should be done at about 20 mm depth. In South African market gardens, closer spacing may be used for baby leaf production, while wider spacing allows for full-size plant development. Proper spacing ensures good air circulation and makes harvesting easier. Some growers use succession planting, starting new rows every 2-3 weeks for continuous harvest.</p>
+                    <div class="garden-planner">
+                            <h2>Spinach Garden Planner</h2>
+                            <div class="input-group">
+                                <label for="gardenWidth">Garden Width (meters):</label>
+                                <input type="number" id="gardenWidth" min="1" step="0.1">
+                            </div>
+                            <div class="input-group">
+                                <label for="gardenLength">Garden Length (meters):</label>
+                                <input type="number" id="gardenLength" min="1" step="0.1">
+                            </div>
+                            <div class="input-group">
+                                <label for="growingMethod">Growing Method:</label>
+                                <select id="growingMethod">
+                                    <option value="standard">Standard Row (30cm spacing)</option>
+                                    <option value="intensive">Intensive Bed (20cm spacing)</option>
+                                    <option value="container">Container Growing (15cm spacing)</option>
+                                </select>
+                            </div>
+                            <button id="planGarden">Plan My Spinach Garden</button>
+                            <div id="gardenResults"></div>
+                        </div>
             </div>
         </div>
     </main>

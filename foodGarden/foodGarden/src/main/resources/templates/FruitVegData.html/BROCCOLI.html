@@ -6,6 +6,7 @@
     <title>Broccoli</title>
     <link rel="stylesheet" href="css/broccoli.css">
     <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
+    <script src="javascript files/broccoli.js" defer></script>
 </head>
 <body>
     <!-- Navigation links placed at the top of the page -->
@@ -41,7 +42,28 @@
                 <p>Prefers rich, loamy, well-drained soil with pH between 6.0 and 7.0. Organic matter like compost or aged manure boosts nutrient availability. In South Africa, soils can be sandy or clay-based, so amending with organic material is often necessary to improve structure and fertility. Broccoli is a heavy feeder, so regular applications of balanced fertiliser or liquid seaweed can help maintain growth. Avoid planting in soil that has recently grown other brassicas, as this can increase the risk of soil-borne diseases. Good drainage is essential, as broccoli does not tolerate waterlogged conditions.</p>
                 <h2>Sunlight Needs:</h2>
                 <p>Needs 6–8 hours of full sun daily. In hot climates, partial shade can help prevent premature bolting. South African gardeners often plant broccoli in spots that get morning sun and afternoon shade, especially in regions with intense summer heat. Too much shade can result in leggy plants and small heads, while too much sun in hot weather can cause stress and early flowering. If growing in containers, move them to follow the sun or use shade cloth during heatwaves to protect the crop and extend the harvest window.</p>
+                <div class="garden-planner">
+                        <h2>Broccoli Garden Planner</h2>
+                        <div class="input-group">
+                            <label for="gardenWidth">Garden Width (meters):</label>
+                            <input type="number" id="gardenWidth" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="gardenLength">Garden Length (meters):</label>
+                            <input type="number" id="gardenLength" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="growingMethod">Growing Method:</label>
+                            <select id="growingMethod">
+                                <option value="standard">Standard Growing (60cm spacing)</option>
+                                <option value="intensive">Intensive Growing (45cm spacing)</option>
+                                <option value="container">Container Growing (30cm spacing)</option>
+                            </select>
             </div>
+            <button id="planGarden">Plan My Broccoli Garden</button>
+            <div id="gardenResults"></div>
+            </div>
+        </div>
         </div>
     </main>
 </body>

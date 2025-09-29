@@ -6,6 +6,7 @@
     <title>Avocados</title>
     <link rel="stylesheet" href="css/avocado.css">
     <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
+    <script src="javascript files/avocado.js" defer></script>
 </head>
 <body>
     <header>
@@ -42,6 +43,27 @@
                 <p>Needs 6 to 8 hours of direct sunlight daily. Protect young trees from strong winds and excessive heat. In South Africa, avocados thrive in full sun but benefit from some afternoon shade in the hottest regions. Windbreaks or shade cloth can be used to shield young trees from harsh conditions, helping them establish more quickly. Mature trees are more resilient but still need good sunlight for healthy growth and fruit development.</p>
                 <h2>Temperature Tolerance:</h2>
                 <p>Thrives between 16°C and 29°C. Temperatures outside this range can hinder growth or damage fruit. South African avocados are sensitive to frost, especially when young, so planting in sheltered spots or using frost covers is recommended in cooler areas. High temperatures above 30°C can cause fruit drop or sunburn, so regular watering and mulching are important during heatwaves. With the right care, avocados can be grown successfully in many parts of the country.</p>
+                <div class="garden-planner">
+                    <h2>Avocado Garden Planner</h2>
+                    <div class="input-group">
+                        <label for="gardenWidth">Garden Width (meters):</label>
+                        <input type="number" id="gardenWidth" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="gardenLength">Garden Length (meters):</label>
+                        <input type="number" id="gardenLength" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="growingMethod">Growing Method:</label>
+                        <select id="growingMethod">
+                            <option value="standard">Standard Growing (3m initial spacing)</option>
+                            <option value="intensive">Intensive Growing (2m initial spacing)</option>
+                            <option value="container">Container Growing (1.5m spacing)</option>
+                        </select>
+                    </div>
+                    <button id="planGarden">Plan My Avocado Garden</button>
+                    <div id="gardenResults"></div>
+                </div>
             </div>
         </div>
     </main>

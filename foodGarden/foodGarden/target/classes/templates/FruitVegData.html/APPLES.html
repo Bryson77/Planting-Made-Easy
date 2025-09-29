@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apples</title>
     <link rel="stylesheet" href="css\apple.css">
+    <script src="javascript files/apple.js" defer></script>
     <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
 <body>
@@ -41,6 +42,27 @@
                 <p>Nitrogen-rich compost supports healthy growth, and irrigation systems like soaker hoses or sprinklers are recommended. In South Africa, many gardeners use organic fertilisers such as chicken manure or commercial blends tailored for fruit trees. Feed your apple trees in early spring and again after the first flush of growth. Drip irrigation is ideal for conserving water and delivering moisture directly to the roots. If you’re using municipal water, be mindful of local restrictions during drought periods. Regular feeding and consistent watering will help your apples grow strong and produce abundant, tasty fruit.</p>
                 <h2>Spacing Guidelines:</h2>
                 <p>Proper spacing—ranging from 1.8 to 7.6 metres depending on tree type—ensures optimal sunlight exposure and development. Dwarf varieties can be planted closer together, making them suitable for smaller gardens or even large containers. Standard trees need more room to spread out, so plan your orchard layout carefully. Good airflow between trees helps prevent fungal diseases, which can be a problem in humid regions. If you’re planting multiple varieties, allow enough space for each to grow without competing for light and nutrients. Well-spaced trees are easier to prune, harvest, and maintain, leading to healthier plants and better yields.</p>
+                <div class="garden-planner">
+                    <h2>Apple Garden Planner</h2>
+                    <div class="input-group">
+                        <label for="gardenWidth">Garden Width (meters):</label>
+                        <input type="number" id="gardenWidth" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="gardenLength">Garden Length (meters):</label>
+                        <input type="number" id="gardenLength" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="growingMethod">Growing Method:</label>
+                        <select id="growingMethod">
+                            <option value="standard">Standard Growing (2.5m initial spacing)</option>
+                            <option value="intensive">Intensive Growing (1.8m initial spacing)</option>
+                            <option value="container">Container Growing (1.2m spacing)</option>
+                        </select>
+                    </div>
+                    <button id="planGarden">Plan My Apple Garden</button>
+                    <div id="gardenResults"></div>
+                </div>
             </div>
         </div>
     </main>

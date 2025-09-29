@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomatoes</title>
     <link rel="stylesheet" href="css/tomatoes.css">
+    <script src="javascript files/tomato.js" defer></script>
     <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
 <body>
@@ -46,6 +47,28 @@
                 <p>Drip irrigation delivers water directly to the root zone, minimizing evaporation and disease risk. In South Africa's hot climate, irrigation timing is crucial - early morning watering is preferred. Soil moisture monitors help maintain optimal water levels without overwatering. Commercial growers often use automated systems with moisture sensors for precise water management. Mulching around plants helps conserve moisture and maintain even soil temperature.</p>
                 <h2>Seed Spacing & Density:</h2>
                 <p>Space plants 60-90 cm apart with rows 120-150 cm apart to ensure good airflow and light penetration. Proper spacing helps prevent disease spread and makes maintenance easier. In intensive gardens, vertical growing systems can increase yield per square meter while maintaining good air circulation. Commercial growers often use wider spacing for mechanical cultivation and harvest operations. Trellising or caging helps support heavy fruit loads and keeps plants upright for better sun exposure.</p>
+            
+                    <div class="garden-planner">
+                        <h2>Tomato Garden Planner</h2>
+                        <div class="input-group">
+                            <label for="gardenWidth">Garden Width (meters):</label>
+                            <input type="number" id="gardenWidth" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="gardenLength">Garden Length (meters):</label>
+                            <input type="number" id="gardenLength" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="growingMethod">Growing Method:</label>
+                            <select id="growingMethod">
+                                <option value="standard">Standard Row (90cm spacing)</option>
+                                <option value="intensive">Intensive Bed (60cm spacing)</option>
+                                <option value="container">Container Growing (45cm spacing)</option>
+                            </select>
+                        </div>
+                        <button id="planGarden">Plan My Tomato Garden</button>
+                        <div id="gardenResults"></div>
+                    </div>
             </div>
         </div>
     </main>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potatoes</title>
     <link rel="stylesheet" href="css/potato.css">
+    <script src="javascript files/potato.js" defer></script>
      <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
 <body>
@@ -49,6 +50,27 @@
                 <p>Drip or furrow irrigation helps maintain consistent moisture and prevents disease spread. Modern South African farms often use precision irrigation systems with soil moisture sensors. Water requirements increase during flowering and tuber formation stages. Careful irrigation management helps prevent common problems like hollow heart and growth cracks. Regular system maintenance ensures efficient water delivery throughout the growing season.</p>
                 <h2>Spacing & Density:</h2>
                 <p>Space plants 30 cm apart in rows 75 cm apart, adjusting based on variety and soil type. This spacing allows for proper tuber development and ease of hilling operations. In South African commercial operations, mechanical planters maintain precise spacing for optimal yield. Wider spacing may be needed in drier areas or for larger varieties. Good spacing also facilitates pest monitoring and disease management throughout the growing season.</p>
+                    <div class="garden-planner">
+                        <h2>Potato Garden Planner</h2>
+                        <div class="input-group">
+                            <label for="gardenWidth">Garden Width (meters):</label>
+                            <input type="number" id="gardenWidth" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="gardenLength">Garden Length (meters):</label>
+                            <input type="number" id="gardenLength" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="growingMethod">Growing Method:</label>
+                            <select id="growingMethod">
+                                <option value="standard">Standard Row (75cm spacing)</option>
+                                <option value="intensive">Intensive Bed (60cm spacing)</option>
+                                <option value="container">Container Growing (45cm spacing)</option>
+                            </select>
+                        </div>
+                        <button id="planGarden">Plan My Potato Garden</button>
+                        <div id="gardenResults"></div>
+                    </div>  
             </div>
         </div>
     </main>

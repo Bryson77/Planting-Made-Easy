@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet potatoes</title>
     <link rel="stylesheet" href="css/sweetpotatoes.css">
+    <script src="javascript files/sweetpotato.js" defer></script>
     <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
 <body>
@@ -45,6 +46,27 @@
                 <p>Thrives in warm, humid conditions between 29°C and 35°C, making it well-suited to South Africa's subtropical regions. While temperatures above 38°C may slow growth, established plants can manage with proper irrigation and mulching. Night temperatures should stay above 15°C for optimal growth. In cooler areas, black plastic mulch helps maintain soil warmth and extends the growing season.</p>
                 <h2>Fertilizer Needs:</h2>
                 <p>Requires balanced nutrition with nitrogen for vine growth, potassium for tuber development, and phosphorus for root health. South African farmers typically apply a base fertilizer before planting and follow up with side dressings as needed. Organic options include well-composted manure and bone meal. Avoid excessive nitrogen, which can promote vine growth at the expense of tuber development. Regular soil testing helps determine specific nutrient needs for optimal growth.</p>
+                <div class="garden-planner">
+                        <h2>Sweet Potato Garden Planner</h2>
+                        <div class="input-group">
+                            <label for="gardenWidth">Garden Width (meters):</label>
+                            <input type="number" id="gardenWidth" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="gardenLength">Garden Length (meters):</label>
+                            <input type="number" id="gardenLength" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="growingMethod">Growing Method:</label>
+                            <select id="growingMethod">
+                                <option value="standard">Standard Row (100cm spacing)</option>
+                                <option value="intensive">Intensive Bed (75cm spacing)</option>
+                                <option value="container">Container Growing (60cm spacing)</option>
+                            </select>
+                        </div>
+                        <button id="planGarden">Plan My Sweet Potato Garden</button>
+                        <div id="gardenResults"></div>
+                    </div>
             </div>
         </div>
     </main>

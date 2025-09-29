@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maize</title>
+    <script src="javascript files/maize.js" defer></script>
     <link rel="stylesheet" href="css/maize.css">
     <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
@@ -47,6 +48,27 @@
                 <p>Drip irrigation improves water efficiency and grain yield. Depth and frequency affect productivity. In South Africa, drip systems are increasingly popular for conserving water and delivering moisture directly to the roots. Irrigation should be adjusted based on soil type and weather, with more frequent watering during hot, dry spells. Monitoring soil moisture helps prevent stress and supports steady growth throughout the season.</p>
                 <h2>Seed Spacing & Density:</h2>
                 <p>Space plants 13–15 cm apart. Rows should be spaced to allow airflow and light penetration. Proper spacing helps prevent disease and ensures each plant has enough room to develop strong roots and stalks. In South Africa, farmers often use mechanical planters for large fields, while home gardeners can sow seeds by hand, making sure to keep rows straight and evenly spaced. Good spacing also makes it easier to weed, fertilise, and harvest the crop.</p>
+                <div class="garden-planner">
+                    <h2>Maize Garden Planner</h2>
+                    <div class="input-group">
+                        <label for="gardenWidth">Garden Width (meters):</label>
+                        <input type="number" id="gardenWidth" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="gardenLength">Garden Length (meters):</label>
+                        <input type="number" id="gardenLength" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="growingMethod">Growing Method:</label>
+                        <select id="growingMethod">
+                            <option value="standard">Standard Row (75cm spacing)</option>
+                            <option value="intensive">Intensive Growing (60cm spacing)</option>
+                            <option value="container">Container Growing (45cm spacing)</option>
+                        </select>
+                    </div>
+                    <button id="planGarden">Plan My Maize Garden</button>
+                    <div id="gardenResults"></div>
+                </div>
             </div>
         </div>
     </main>

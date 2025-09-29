@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lettuce</title>
     <link rel="stylesheet" href="css/lettuce.css">
+    <script src="javascript files/lettuce.js" defer></script>
      <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
 </head>
 <body>
@@ -43,6 +44,27 @@
                 <p>Full sun is preferred, but partial shade helps in warmer climates to prevent bolting. South African gardeners often plant lettuce in spots that get morning sun and afternoon shade, especially in regions with intense summer heat. Too much shade can result in leggy plants and small heads, while too much sun in hot weather can cause stress and early bolting. If growing in containers, move them to follow the sun or use shade cloth during heatwaves to protect the crop and extend the harvest window.</p>
                 <h2>Temperature Tolerance:</h2>
                 <p>Can grow between 7°C and 18°C, but optimal growth occurs between 16°C and 18°C. High temperatures reduce quality and yield. In South Africa, lettuce is best grown during the cooler months to avoid heat stress and bitterness. Protecting young plants from sudden temperature changes with mulch or row covers can help maintain steady growth. With the right care, lettuce can be grown successfully in many parts of the country, providing a refreshing addition to meals throughout the season.</p>
+                    <div class="garden-planner">
+                        <h2>Lettuce Garden Planner</h2>
+                        <div class="input-group">
+                            <label for="gardenWidth">Garden Width (meters):</label>
+                            <input type="number" id="gardenWidth" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="gardenLength">Garden Length (meters):</label>
+                            <input type="number" id="gardenLength" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="growingMethod">Growing Method:</label>
+                            <select id="growingMethod">
+                                <option value="standard">Standard Row (25cm spacing)</option>
+                                <option value="intensive">Intensive Bed (20cm spacing)</option>
+                                <option value="container">Container Growing (15cm spacing)</option>
+                            </select>
+                        </div>
+                        <button id="planGarden">Plan My Lettuce Garden</button>
+                        <div id="gardenResults"></div>
+                    </div>
             </div>
         </div>
     </main>
