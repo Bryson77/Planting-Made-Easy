@@ -21,7 +21,7 @@ nav ul {
     font-size: 1.3rem;
     color: white;
     font-weight: bold;
-    margin-right: 1060px;  /* Pushes the name to the left */
+    margin-right: 500px;  /* Pushes the name to the left */
 }
 .nav-logo{
      height: 30px;
