@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocados</title>
+    <link rel="stylesheet" href="css/avocado.css">
+    <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
+    <script src="javascript files/avocado.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="brand">
+                    <img src="..\..\static\images\finalogo.png" alt="Our Logo" class="nav-logo">
+                    <span class="name">GrowTech Collective</span>
+                </li>
+                <li><a href="..\homepage.html">Home</a></li>
+                <li><a href="..\generalGardening.html">Gardening Guide</a></li>
+                <li><a href="..\plantspecific.html">Plant Guides</a></li>
+                <li><a href="..\about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="center-container">
+            <div class="content-box">
+                <h1>AVOCADO</h1>
+                <img src="pictures\Avocado.jfif" alt="A picture of an Avocado" class="Avocado1">
+                <h2>Growth Duration:</h2>
+                <p>Standard avocado trees take 4 to 15 years to bear fruit, while grafted trees can produce within 2 to 3 years. In South Africa, the time to fruiting can depend on the climate, soil quality, and whether the tree is grown from seed or purchased as a grafted sapling. Grafted trees are preferred by most local growers because they are more reliable and start producing much sooner. Young trees spend their first years developing a strong root system and healthy branches, which is essential for supporting future harvests. Once established, avocados can produce fruit for many years, with peak yields often reached after 8 to 10 years. Regular feeding, watering, and pruning help ensure consistent production and healthy fruit.</p>
+                <h2>Optimal Growing Seasons:</h2>
+                <p>Spring and summer promote active growth and flowering. In cooler months, growth slows or stops, especially in frost-prone areas. In South Africa, avocados are best planted in late spring when the risk of frost has passed and the soil is warming up. The subtropical regions of Limpopo, Mpumalanga, and KwaZulu-Natal are ideal for avocado cultivation, thanks to their mild winters and warm, wet summers. Flowering typically occurs in spring, with fruit developing over the summer and maturing in late autumn or early winter. Protecting young trees from cold snaps is important, as frost can damage tender shoots and flowers.</p>
+                <img src="pictures\AvocadoTree.jfif" alt="A picture of an Avocado" class="Avo2">
+                <h2>Yield Per Area:</h2>
+                <p>Average yields range from 12 to 16 tons per hectare, with top-performing farms reaching up to 22 tons. In home gardens, a mature tree can produce between 100 and 300 fruits per season, depending on the variety and care. South African commercial growers often use irrigation and fertilisation to boost yields, and regular thinning of fruit can help improve size and quality. Good orchard management, including pest and disease control, is key to achieving high yields year after year.</p>
+                <h2>Water Requirements:</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CL0IVzjmB_U?si=SATsN-xJUwKRCYAB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Requires 1,000 to 1,300 mm of water annually. Regular watering is crucial during flowering and fruit set. In South Africa, rainfall varies widely by region, so supplemental irrigation is often needed, especially in drier areas. Drip irrigation is recommended to keep the soil consistently moist without waterlogging the roots. Mulching around the base of the tree helps retain moisture and keeps weeds down. During dry spells, monitor soil moisture closely and adjust watering to prevent stress, which can affect fruit quality and yield.</p>
+                <h2>Soil Requirements:</h2>
+                <p>Prefers well-drained soil with a pH between 5 and 7. Rich organic matter improves root health and nutrient uptake. Avocados do not tolerate waterlogged soils, so planting on mounds or raised beds is common practice in areas with heavy clay. Adding compost or well-rotted manure before planting helps improve soil structure and fertility. In South Africa, soils in avocado-growing regions are often sandy or loamy, which suits the trees well. Regular soil testing is recommended to monitor pH and nutrient levels, and lime can be added if the soil is too acidic.</p>
+                <h2>Sunlight Needs:</h2>
+                <p>Needs 6 to 8 hours of direct sunlight daily. Protect young trees from strong winds and excessive heat. In South Africa, avocados thrive in full sun but benefit from some afternoon shade in the hottest regions. Windbreaks or shade cloth can be used to shield young trees from harsh conditions, helping them establish more quickly. Mature trees are more resilient but still need good sunlight for healthy growth and fruit development.</p>
+                <h2>Temperature Tolerance:</h2>
+                <p>Thrives between 16°C and 29°C. Temperatures outside this range can hinder growth or damage fruit. South African avocados are sensitive to frost, especially when young, so planting in sheltered spots or using frost covers is recommended in cooler areas. High temperatures above 30°C can cause fruit drop or sunburn, so regular watering and mulching are important during heatwaves. With the right care, avocados can be grown successfully in many parts of the country.</p>
+                <div class="garden-planner">
+                    <h2>Avocado Garden Planner</h2>
+                    <div class="input-group">
+                        <label for="gardenWidth">Garden Width (meters):</label>
+                        <input type="number" id="gardenWidth" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="gardenLength">Garden Length (meters):</label>
+                        <input type="number" id="gardenLength" min="1" step="0.1">
+                    </div>
+                    <div class="input-group">
+                        <label for="growingMethod">Growing Method:</label>
+                        <select id="growingMethod">
+                            <option value="standard">Standard Growing (3m initial spacing)</option>
+                            <option value="intensive">Intensive Growing (2m initial spacing)</option>
+                            <option value="container">Container Growing (1.5m spacing)</option>
+                        </select>
+                    </div>
+                    <button id="planGarden">Plan My Avocado Garden</button>
+                    <div id="gardenResults"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

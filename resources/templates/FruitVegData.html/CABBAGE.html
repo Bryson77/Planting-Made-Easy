@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabbage</title>
+    <link rel="stylesheet" href="css/cabbage.css">
+    <script src="javascript files/cabbage.js" defer></script>
+    <link rel="icon" href="..\..\static\images\finalogo.png" type="image/png">
+</head>
+<body>
+    <!-- Navigation links placed at the top of the page -->
+    <header>
+        <nav>
+            <ul>
+                <li class="brand">
+                    <img src="..\..\static\images\finalogo.png" alt="Our Logo" class="nav-logo">
+                    <span class="name">GrowTech Collective</span>
+                </li>
+                <li><a href="..\homepage.html">Home</a></li>
+                <li><a href="..\generalGardening.html">Gardening Guide</a></li>
+                <li><a href="..\plantspecific.html">Plant Guides</a></li>
+                <li><a href="..\about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="center-container">
+            <div class="content-box">
+                <h1>CABBAGE</h1>
+                 <img src="pictures\Cabbage.jfif" alt="A picture of a cabbage head" class="Cabbage1">
+                <h2>Growth Duration:</h2>
+                <p>Cabbage matures in 60–100 days after transplanting, or 90–120 days from seed, depending on the variety and growing conditions. In South Africa, gardeners often choose early-maturing types for quick harvests, while larger-headed varieties may take a bit longer. The cooler provinces such as the Western Cape and KwaZulu-Natal are ideal for cabbage, as the mild climate helps heads form tightly and prevents bolting. Starting seeds in trays and transplanting seedlings gives plants a strong start, and regular feeding with compost or organic fertiliser encourages robust growth. Once the heads are firm and compact, they should be harvested promptly to avoid splitting or loss of quality. With good care, cabbages can be harvested over several weeks, providing a steady supply for the kitchen.</p>
+                <h2>Optimal Growing Seasons:</h2>
+                <p>Cabbage is best planted in early spring or late summer, preferring the cooler months for optimal growth. In South Africa, autumn and winter plantings are popular, as the lower temperatures reduce pest pressure and help produce sweeter, crisper heads. Planting in summer is possible in cooler regions, but shade and mulch may be needed to protect young plants from heat stress. Succession planting every few weeks ensures a continuous harvest, and choosing varieties suited to local conditions can improve results. Avoid planting during the hottest months, as high temperatures can cause heads to loosen and flavour to decline.</p>
+                <img src="pictures\CabbagePlant.jfif" alt="A picture of a cabbage plant" class="Cabbage2">
+                <h2>Yield Per Area:</h2>
+                <p>Yields range from 25 to 70 tons per hectare, with spacing and variety affecting head size and overall output. In home gardens, each cabbage plant can produce a large, dense head, and careful spacing allows for good airflow and disease prevention. South African growers often use drip irrigation and organic mulches to maintain soil moisture and reduce weed competition, which helps boost yields. Regular monitoring for pests such as aphids and cabbage worms is important for keeping plants healthy and productive. With proper care, cabbages can be a reliable and rewarding crop for both small and large gardens.</p>
+                <h2>Water Requirements:</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ux-DtELMW5A?si=ITrRSXBPqpdrpoZ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Cabbage needs 25–40 mm of water weekly, with consistent moisture being key to forming solid heads. In South Africa’s drier regions, supplemental irrigation is often necessary, especially during dry spells or windy weather. Drip irrigation is recommended to deliver water directly to the roots and minimise evaporation. Mulching with straw or bark chips helps retain moisture and keeps the soil temperature stable. Overwatering should be avoided, as soggy soil can lead to root rot and other fungal problems. Consistent watering is essential for producing crisp, tender cabbage heads.</p>
+                <h2>Soil Requirements:</h2>
+                <p>Cabbage prefers fertile, loamy soil with a pH between 6.0 and 6.8, amended with compost or manure for best results. In South Africa, soils can be sandy or clay-based, so adding organic matter is often necessary to improve structure and fertility. Cabbage is a heavy feeder, so regular applications of balanced fertiliser or liquid seaweed can help maintain growth. Avoid planting in soil that has recently grown other brassicas, as this can increase the risk of soil-borne diseases. Good drainage is essential, as cabbage does not tolerate waterlogged conditions.</p>
+                <h2>Sunlight Needs:</h2>
+                <p>Cabbage requires 6–8 hours of full sun daily for optimal growth. In hot climates, partial shade can help prevent premature bolting and keep heads firm. South African gardeners often plant cabbage in spots that get morning sun and afternoon shade, especially in regions with intense summer heat. Too much shade can result in leggy plants and small heads, while too much sun in hot weather can cause stress and early flowering. If growing in containers, move them to follow the sun or use shade cloth during heatwaves to protect the crop and extend the harvest window.</p>
+                <h2>Fertilizer Needs:</h2>
+                <p>Use a balanced NPK fertiliser for strong growth, with organic options like compost being highly effective. In South Africa, many gardeners prefer organic fertilisers such as chicken manure or commercial blends tailored for leafy vegetables. Feed your cabbage plants in early spring and again after the first flush of growth. Regular feeding and consistent watering will help your cabbages grow strong and produce abundant, tasty heads. Good nutrition also helps the plants resist pests and diseases, ensuring a healthy crop throughout the season.</p>
+                <div class="garden-planner">
+                        <h2>Cabbage Garden Planner</h2>
+                        <div class="input-group">
+                            <label for="gardenWidth">Garden Width (meters):</label>
+                            <input type="number" id="gardenWidth" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="gardenLength">Garden Length (meters):</label>
+                            <input type="number" id="gardenLength" min="1" step="0.1">
+                        </div>
+                        <div class="input-group">
+                            <label for="growingMethod">Growing Method:</label>
+                            <select id="growingMethod">
+                                <option value="standard">Standard Row (60cm spacing)</option>
+                                <option value="intensive">Intensive Bed (45cm spacing)</option>
+                                <option value="container">Container Growing (30cm spacing)</option>
+                            </select>
+                        </div>
+                        <button id="planGarden">Plan My Cabbage Garden</button>
+                        <div id="gardenResults"></div>
+                                </div>
+                    </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,1 +1,0 @@
-web: java -Dserver.port=$PORT -jar target/foodGarden-1.0.0.jar
