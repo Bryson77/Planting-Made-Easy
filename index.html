@@ -6,23 +6,31 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="homepage.css">
 	<link rel="icon" href="resources/static/images/finalogo.png" type="image/png">
+	<script src="index.js" defer></script>
 </head>
 <body>
     <!-- Navigation links placed at the top of the page -->
 	 <header>
-		<nav>
-			<ul>
-				<li class="brand">
-					<img src="resources\static\images\finalogo.png" alt="Our Logo" class="nav-logo">
-					<span class="name">GrowTech Collective</span>
-				</li>
-				<li><a href="#">Home</a></li>
-				<li><a href="resources/templates/generalGardening.html">Gardening Guide</a></li>
-                <li><a href="resources/templates/plantspecific.html">Plant Guides</a></li>
-                <li><a href="resources/templates/about.html">About Us</a></li>
-			</ul>
-		</nav>
-	</header>
+    <nav>
+        <div class="brand">
+            <img src="resources/static/images/finalogo.png" alt="Our Logo" class="nav-logo">
+            <span class="name">GrowTech Collective</span>
+            <!-- Hamburger toggle button -->
+            <div class="nav-toggle" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="resources/templates/generalGardening.html">Gardening Guide</a></li>
+            <li><a href="resources/templates/plantspecific.html">Plant Guides</a></li>
+            <li><a href="resources/templates/about.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+
 	<main>
          <div class="center-container">
          	<div class="content-box">
