@@ -9,16 +9,8 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 import * as firebaseui from "https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.js";
 
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDuzTjN96TOKOReyJi_zDs03-OILxMxmVs",
-  authDomain: "growtech-collective.firebaseapp.com",
-  projectId: "growtech-collective",
-  storageBucket: "growtech-collective.firebasestorage.app",
-  messagingSenderId: "1035107940967",
-  appId: "1:1035107940967:web:701527deaa1ac708c332c2",
-  measurementId: "G-QGJX090B09"
-};
+// Import Firebase config (ignored by Git)
+import { firebaseConfig } from './firebaseConfig.js';
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -27,7 +19,7 @@ const auth = getAuth(app);
 // Initialize FirebaseUI
 const ui = new firebaseui.auth.AuthUI(auth);
 
-// Determine where to redirect after login
+// Redirect after login
 const redirectAfterLogin = sessionStorage.getItem('redirectAfterLogin') || 'index.html';
 
 // FirebaseUI configuration
@@ -39,20 +31,20 @@ const uiConfig = {
   ]
 };
 
-// Start FirebaseUI
-ui.start('#firebaseui-auth-container', uiConfig);
+// Start FirebaseUI if login container exists
+if (document.getElementById('firebaseui-auth-container')) {
+  ui.start('#firebaseui-auth-container', uiConfig);
+}
 
 // Protect pages: redirect non-logged-in users to login
 onAuthStateChanged(auth, user => {
-  if (!user) {
-    // Save the current page path
+  if (!user && !window.location.pathname.includes('login.html')) {
     sessionStorage.setItem('redirectAfterLogin', window.location.pathname);
-    // Redirect to login page
     window.location.href = 'login.html';
   }
 });
 
-// Logout functionality (attach to a button with id="logout-btn")
+// Logout functionality
 const logoutBtn = document.getElementById('logout-btn');
 if (logoutBtn) {
   logoutBtn.addEventListener('click', () => {
@@ -60,9 +52,7 @@ if (logoutBtn) {
       .then(() => {
         window.location.href = 'login.html';
       })
-      .catch(error => {
-        console.error("Logout error:", error);
-      });
+      .catch(err => console.error("Logout error:", err));
   });
 }
 
