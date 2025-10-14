@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fff8; /* very light green */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.login-box h1 {
+  color: #2e7d32; /* dark green */
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* FirebaseUI buttons styling */
+.firebaseui-idp-button {
+  border-radius: 6px !important;
+}
+
+.firebaseui-idp-button.google {
+  background-color: #4CAF50 !important; /* green */
+  color: white !important;
+}
+
+.firebaseui-idp-button.google:hover {
+  background-color: #45a049 !important;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | GrowTech</title>
+
+  <!-- Login CSS -->
+  <link rel="stylesheet" href="login.css">
+
+  <!-- Firebase SDKs (modular v9+) -->
+  <script type="module" src="js/auth.js"></script>
+
+  <!-- FirebaseUI CSS & JS -->
+  <link rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.css" />
+  <script src="https://www.gstatic.com/firebasejs/ui/6.1.0/firebase-ui-auth.js"></script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h1>Welcome to GrowTech</h1>
+      <p>Sign in to continue</p>
+
+      <!-- FirebaseUI will render login/signup here -->
+      <div id="firebaseui-auth-container"></div>
+    </div>
+  </div>
+</body>
+</html>
+
+
