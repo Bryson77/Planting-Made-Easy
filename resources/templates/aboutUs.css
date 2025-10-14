@@ -111,3 +111,19 @@ a {
 a:hover {
     color: #2e7d32;
 }
+/* CSS for Google Form Embed */
+.contact-form-container {
+  max-width: 800px;       /* Responsive width */
+  width: 90%;             /* Scale on smaller screens */
+  margin: 40px auto;      /* Center on page */
+  background-color: #f8fff8; /* Light green, matching theme */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.2); /* Soft green shadow */
+}
+
+.contact-form-container iframe {
+  width: 100% !important; /* Make iframe fill the container */
+  height: 800px;          /* Adjust as needed */
+  border: none;
+  border-radius: 8px; }

@@ -115,3 +115,30 @@ a:hover {
     width: 560px;
     height: 320px;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 40px 0;
+  font-size: 16px;
+}
+
+table th, table td {
+  border: 1px solid #c8e6c9;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #a5d6a7;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f1f8f1;
+}
+
+table tr:hover {
+  background-color: #dcedc8;
+  transition: background-color 0.3s ease;
+}
