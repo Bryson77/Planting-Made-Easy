@@ -18,7 +18,7 @@ body {
 
 .login-box {
   background-color: white;
-  padding: 40px;
+  padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(76, 175, 80, 0.2);
   max-width: 400px;
@@ -29,18 +29,24 @@ body {
 .login-box h1 {
   color: #2e7d32; /* dark green */
   margin-bottom: 10px;
+  font-size: 1.8em;
 }
 
 .login-box p {
   color: #333333;
   margin-bottom: 20px;
+  font-size: 1em;
 }
 
 /* FirebaseUI buttons styling */
 .firebaseui-idp-button {
   border-radius: 6px !important;
+  font-weight: bold !important;
+  padding: 10px !important;
+  margin-bottom: 10px !important;
 }
 
+/* Google button */
 .firebaseui-idp-button.google {
   background-color: #4CAF50 !important; /* green */
   color: white !important;
@@ -48,4 +54,29 @@ body {
 
 .firebaseui-idp-button.google:hover {
   background-color: #45a049 !important;
+}
+
+/* Email/password button */
+.firebaseui-idp-button.email {
+  background-color: #2e7d32 !important; /* dark green */
+  color: white !important;
+}
+
+.firebaseui-idp-button.email:hover {
+  background-color: #27632a !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .login-box h1 {
+    font-size: 1.5em;
+  }
+
+  .login-box p {
+    font-size: 0.95em;
+  }
 }
